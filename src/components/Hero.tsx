@@ -47,9 +47,9 @@ export const Hero = () => {
                 onClick={handleContactUs}
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 transition-all duration-300"
+                className="border-2 border-white text-white hover:bg-white hover:text-blue-600 bg-transparent font-semibold px-8 transition-all duration-300"
               >
-                Contact Us
+                WhatsApp Chat
               </Button>
             </div>
 
