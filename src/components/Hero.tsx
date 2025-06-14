@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Wifi, Zap, Shield, Clock } from "lucide-react";
 
@@ -47,7 +48,7 @@ export const Hero = () => {
                 onClick={handleContactUs}
                 size="lg" 
                 variant="outline" 
-                className="border-2 border-white text-white hover:bg-white hover:text-blue-600 bg-transparent font-semibold px-8 transition-all duration-300"
+                className="border-2 border-white bg-white/10 text-white hover:bg-white hover:text-blue-600 font-semibold px-8 transition-all duration-300"
               >
                 WhatsApp Chat
               </Button>
