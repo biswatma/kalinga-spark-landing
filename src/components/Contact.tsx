@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, Globe, MapPin, Clock } from "lucide-react";
+import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -28,9 +28,8 @@ export const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-900">06742-354611</p>
-                    <p className="font-semibold text-gray-900">1800-1039-139</p>
-                    <p className="text-sm text-gray-600">Toll Free Number</p>
+                    <p className="font-semibold text-gray-900">9238500800</p>
+                    <p className="text-sm text-gray-600">Phone & WhatsApp</p>
                   </div>
                 </CardContent>
               </Card>
@@ -38,13 +37,13 @@ export const Contact = () => {
               <Card className="border-l-4 border-l-green-500">
                 <CardHeader className="pb-3">
                   <CardTitle className="flex items-center gap-3 text-lg">
-                    <Globe className="w-5 h-5 text-green-600" />
-                    Website
+                    <MessageCircle className="w-5 h-5 text-green-600" />
+                    WhatsApp
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="font-semibold text-gray-900">www.railwire.co.in</p>
-                  <p className="text-sm text-gray-600">Visit our website for more info</p>
+                  <p className="font-semibold text-gray-900">9238500800</p>
+                  <p className="text-sm text-gray-600">Quick messaging support</p>
                 </CardContent>
               </Card>
 
@@ -52,12 +51,12 @@ export const Contact = () => {
                 <CardHeader className="pb-3">
                   <CardTitle className="flex items-center gap-3 text-lg">
                     <MapPin className="w-5 h-5 text-orange-600" />
-                    Coverage Area
+                    Location
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="font-semibold text-gray-900">Across Odisha</p>
-                  <p className="text-sm text-gray-600">Serving major cities and towns</p>
+                  <p className="font-semibold text-gray-900">Adaspur, Odisha</p>
+                  <p className="text-sm text-gray-600">Service Area</p>
                 </CardContent>
               </Card>
 
@@ -74,6 +73,12 @@ export const Contact = () => {
                 </CardContent>
               </Card>
             </div>
+
+            <div className="text-center">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Contact Person</h3>
+              <p className="text-lg font-medium text-blue-600">Mahatma Nayak</p>
+              <p className="text-gray-600">Your trusted internet service provider</p>
+            </div>
           </div>
 
           <div className="bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl p-8 text-white">
@@ -85,7 +90,7 @@ export const Contact = () => {
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span>Call us or visit our website</span>
+                <span>Call or WhatsApp us</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
@@ -99,10 +104,10 @@ export const Contact = () => {
             
             <div className="space-y-4">
               <Button className="w-full bg-white text-blue-600 hover:bg-blue-50 font-semibold">
-                Call Now: 06742-354611
+                Call Now: 9238500800
               </Button>
               <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-blue-600 font-semibold">
-                Visit Website
+                WhatsApp Chat
               </Button>
             </div>
           </div>

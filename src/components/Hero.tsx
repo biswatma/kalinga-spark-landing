@@ -10,6 +10,13 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="/lovable-uploads/bc60f6bb-a25b-43c2-8163-c547d51cedab.png" 
+                  alt="Kalinga Fiber Logo" 
+                  className="h-16 w-auto"
+                />
+              </div>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
                 Kalinga Fiber
               </h1>
