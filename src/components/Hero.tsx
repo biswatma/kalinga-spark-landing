@@ -12,7 +12,7 @@ export const Hero = () => {
             <div className="space-y-4">
               <div className="flex items-center gap-4 mb-6">
                 <img 
-                  src="/lovable-uploads/bc60f6bb-a25b-43c2-8163-c547d51cedab.png" 
+                  src="/lovable-uploads/219f6552-9d4c-477f-bfce-9ae1f956a19f.png" 
                   alt="Kalinga Fiber Logo" 
                   className="h-16 w-auto"
                 />

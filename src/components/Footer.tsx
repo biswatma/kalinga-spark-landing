@@ -1,4 +1,3 @@
-
 export const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -7,7 +6,7 @@ export const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img 
-                src="/lovable-uploads/bc60f6bb-a25b-43c2-8163-c547d51cedab.png" 
+                src="/lovable-uploads/219f6552-9d4c-477f-bfce-9ae1f956a19f.png" 
                 alt="Kalinga Fiber Logo" 
                 className="h-10 w-auto"
               />
