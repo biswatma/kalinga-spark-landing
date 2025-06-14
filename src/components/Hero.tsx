@@ -51,7 +51,7 @@ export const Hero = () => {
                 onClick={handleContactUs}
                 size="lg" 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8"
+                className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 transition-all duration-300"
               >
                 Contact Us
               </Button>
