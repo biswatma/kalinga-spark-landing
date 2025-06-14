@@ -4,14 +4,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 
 export const Contact = () => {
+  const whatsappLink = "https://wa.link/0o276d";
+  
+  const handleCall = () => {
+    window.open("tel:9238500800", "_self");
+  };
+
+  const handleWhatsApp = () => {
+    window.open(whatsappLink, "_blank");
+  };
+
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Get Connected Today
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 dark:text-gray-300">
             Ready to experience high-speed internet? Contact us now!
           </p>
         </div>
@@ -19,65 +29,65 @@ export const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border-l-4 border-l-blue-500">
+              <Card className="border-l-4 border-l-blue-500 dark:bg-gray-800 dark:border-gray-700">
                 <CardHeader className="pb-3">
-                  <CardTitle className="flex items-center gap-3 text-lg">
+                  <CardTitle className="flex items-center gap-3 text-lg dark:text-white">
                     <Phone className="w-5 h-5 text-blue-600" />
                     Call Us
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
-                    <p className="font-semibold text-gray-900">9238500800</p>
-                    <p className="text-sm text-gray-600">Phone & WhatsApp</p>
+                    <p className="font-semibold text-gray-900 dark:text-white">9238500800</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">Phone & WhatsApp</p>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-green-500">
+              <Card className="border-l-4 border-l-green-500 dark:bg-gray-800 dark:border-gray-700">
                 <CardHeader className="pb-3">
-                  <CardTitle className="flex items-center gap-3 text-lg">
+                  <CardTitle className="flex items-center gap-3 text-lg dark:text-white">
                     <MessageCircle className="w-5 h-5 text-green-600" />
                     WhatsApp
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="font-semibold text-gray-900">9238500800</p>
-                  <p className="text-sm text-gray-600">Quick messaging support</p>
+                  <p className="font-semibold text-gray-900 dark:text-white">9238500800</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Quick messaging support</p>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-orange-500">
+              <Card className="border-l-4 border-l-orange-500 dark:bg-gray-800 dark:border-gray-700">
                 <CardHeader className="pb-3">
-                  <CardTitle className="flex items-center gap-3 text-lg">
+                  <CardTitle className="flex items-center gap-3 text-lg dark:text-white">
                     <MapPin className="w-5 h-5 text-orange-600" />
                     Location
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="font-semibold text-gray-900">Adaspur, Odisha</p>
-                  <p className="text-sm text-gray-600">Service Area</p>
+                  <p className="font-semibold text-gray-900 dark:text-white">Adaspur, Odisha</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Service Area</p>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-purple-500">
+              <Card className="border-l-4 border-l-purple-500 dark:bg-gray-800 dark:border-gray-700">
                 <CardHeader className="pb-3">
-                  <CardTitle className="flex items-center gap-3 text-lg">
+                  <CardTitle className="flex items-center gap-3 text-lg dark:text-white">
                     <Clock className="w-5 h-5 text-purple-600" />
                     Support Hours
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="font-semibold text-gray-900">24/7 Available</p>
-                  <p className="text-sm text-gray-600">Round the clock support</p>
+                  <p className="font-semibold text-gray-900 dark:text-white">24/7 Available</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Round the clock support</p>
                 </CardContent>
               </Card>
             </div>
 
             <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Contact Person</h3>
-              <p className="text-lg font-medium text-blue-600">Mahatma Nayak</p>
-              <p className="text-gray-600">Your trusted internet service provider</p>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Contact Person</h3>
+              <p className="text-lg font-medium text-blue-600 dark:text-blue-400">Mahatma Nayak</p>
+              <p className="text-gray-600 dark:text-gray-300">Your trusted internet service provider</p>
             </div>
           </div>
 
@@ -103,10 +113,17 @@ export const Contact = () => {
             </div>
             
             <div className="space-y-4">
-              <Button className="w-full bg-white text-blue-600 hover:bg-blue-50 font-semibold">
+              <Button 
+                onClick={handleCall}
+                className="w-full bg-white text-blue-600 hover:bg-blue-50 font-semibold"
+              >
                 Call Now: 9238500800
               </Button>
-              <Button variant="outline" className="w-full border-white text-white hover:bg-white hover:text-blue-600 font-semibold">
+              <Button 
+                onClick={handleWhatsApp}
+                variant="outline" 
+                className="w-full border-white text-white hover:bg-white hover:text-blue-600 font-semibold"
+              >
                 WhatsApp Chat
               </Button>
             </div>

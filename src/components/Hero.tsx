@@ -3,8 +3,18 @@ import { Button } from "@/components/ui/button";
 import { Wifi, Zap, Shield, Clock } from "lucide-react";
 
 export const Hero = () => {
+  const whatsappLink = "https://wa.link/0o276d";
+  
+  const handleViewPlans = () => {
+    document.getElementById('pricing-plans')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleContactUs = () => {
+    window.open(whatsappLink, "_blank");
+  };
+
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-600 text-white">
+    <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-600 text-white dark:from-blue-800 dark:via-blue-900 dark:to-cyan-800">
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="relative container mx-auto px-4 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -30,10 +40,19 @@ export const Hero = () => {
             </div>
             
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
+              <Button 
+                onClick={handleViewPlans}
+                size="lg" 
+                className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8"
+              >
                 View Plans
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8">
+              <Button 
+                onClick={handleContactUs}
+                size="lg" 
+                variant="outline" 
+                className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8"
+              >
                 Contact Us
               </Button>
             </div>
