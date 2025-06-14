@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Wifi, Zap, Shield, Clock } from "lucide-react";
 
@@ -27,9 +26,6 @@ export const Hero = () => {
                   className="h-16 w-auto"
                 />
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                Kalinga Fiber
-              </h1>
               <p className="text-xl lg:text-2xl text-blue-100">
                 Odisha's Trusted Broadband Network
               </p>
